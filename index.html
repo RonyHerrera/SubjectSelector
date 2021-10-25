@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/vendors/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendors/Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+    <link rel="stylesheet" href="assets/css/vendors/toastr/toastr.min.css">
+
+    <title>Horario de Asignaturas</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+
+            <div id="content-container" class="col-md-8 offset-2 mt-5">
+
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active" aria-current="page" <a href="">Datos Personales</a></li>
+                    </ol>
+                </nav>
+                <div class="card">
+                    <div class="card-header bg-dark text-light">
+                        <h5 class="text-center">Datos Personales</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-1">
+                            <label for="name" class="form-label">Nombre:</label>
+                            <input class="form-control" type="text" aria-label="default input example" id="name">
+                        </div>
+                        <div class="mb-1">
+                            <label for="country" class="form-label">Provincia:</label>
+                            <input class="form-control" type="text" aria-label="default input example" id="country">
+                        </div>
+                        <div class="mb-1">
+                            <label for="City" class="form-label">Ciudad:</label>
+                            <input class="form-control" type="text" aria-label="default input example" id="City">
+                        </div>
+                        <div class="mb-1">
+                            <label for="sector" class="form-label">Sector:</label>
+                            <input class="form-control" type="text" aria-label="default input example" id="sector">
+                        </div>
+                        <div class="mb-1">
+                            <label for="street" class="form-label">Calle:</label>
+                            <input class="form-control" type="text" aria-label="default input example" id="street">
+                        </div>
+                        <div class="mb-4">
+                            <label for="carrier" class="form-label">Carrera:</label>
+                            <select class="form-select" id="carrier">
+                                <option value="">Seleccione una Opcion</option>
+                                <option value="Software">Software</option>
+                                <option value="Mecatronica">Mecatronica</option>
+                                <option value="Redes">Redes</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button class="btn btn-outline-primary float-end" id="btn-register">
+                                Registrar</button>
+                            <button class="btn btn-outline-warning float-end me-2" id="btn-reset">
+                                Limpiar
+
+
+                            </button>
+
+                        </div>
+                    </div>
+
+
+
+                   
+            
+        <!-- <div class="card-header bg-primary text-light">
+                        <h5 class="text-center">Seleccion de materia</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Programacion Web
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class=" mb-4">
+                                            <div class="form-check form-check-inline mx-4">
+                                                <input class="form-check-input" type="radio" name="1"
+                                                    id="Radio-Hor-1">
+                                                <label class="form-check-label" for="Radio-Hor-1">
+                                                    Lu 10:00 - 14:00
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-check-inline mx-5">
+                                                <input class="form-check-input" type="radio" name="1"
+                                                    id="Radio-Hor-2" checked>
+                                                <label class="form-check-label" for="Radio-Hor-2">
+                                                    Ju 14:00 - 18:00
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-check-inline mx-4">
+                                                <input class="form-check-input" type="radio" name="1"
+                                                    id="Radio-Hor-3" checked>
+                                                <label class="form-check-label" for="Radio-Hor-3">
+                                                    Vi 16:00 - 22:00
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Fisica General </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class=" mb-4">
+                                                <div class="form-check float-start mx-5">
+                                                    <input class="form-check-input" type="radio" name="2"
+                                                        id="Radio-Hor-1">
+                                                    <label class="form-check-label" for="Radio-Hor-1">
+                                                        Ma 10:00 - 14:00
+                                                    </label>
+                                                </div>
+                                                <div class="form-check float-start mx-5">
+                                                    <input class="form-check-input" type="radio" name="2"
+                                                        id="Radio-Hor-2" checked>
+                                                    <label class="form-check-label" for="Radio-Hor-2">
+                                                        Sa 14:00 - 18:00
+                                                    </label>
+                                                </div>
+                                                <div class="form-check float-start mx-5">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                        id="Radio-Hor-3" checked>
+                                                    <label class="form-check-label" for="Radio-Hor-3">
+                                                        Ju 16:00 - 22:00
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Etica 3
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class=" mb-4">
+                                            <div class="form-check float-start mx-5">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="Radio-Hor-1">
+                                                <label class="form-check-label" for="Radio-Hor-1">
+                                                    Ju 10:00 - 14:00
+                                                </label>
+                                            </div>
+                                            <div class="form-check float-start mx-5">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="Radio-Hor-2" checked>
+                                                <label class="form-check-label" for="Radio-Hor-2">
+                                                    Vi 14:00 - 18:00
+                                                </label>
+                                            </div>
+                                            <div class="form-check float-start mx-5">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="Radio-Hor-3" checked>
+                                                <label class="form-check-label" for="Radio-Hor-3">
+                                                    Sa 16:00 - 22:00
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+              -->
+
+                  <!--  <div class="card">
+                        <div class="card-header bg-dark text-light">
+                            <h5 class="text-center">Confirmacion</h5>
+                        </div>
+                        <div class="card-body">
+
+                            <div class="card-header bg-primary text-light">
+                                Datos Personales
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush mb-4">
+                                    <li class="list-group-item">Nombre:</li>
+                                    <li class="list-group-item">Provincia:</li>
+                                    <li class="list-group-item">Ciudad:</li>
+                                    <li class="list-group-item">Sector:</li>
+                                    <li class="list-group-item">Calle:</li>
+                                    <li class="list-group-item">Carrera:</li>
+                                </ul>
+                            </div>
+                            <table class="table table-dark table-sm table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Materias</th>
+                                        <th scope="col">Do</th>
+                                        <th scope="col">Lu</th>
+                                        <th scope="col">Ma</th>
+                                        <th scope="col">Mi</th>
+                                        <th scope="col">Ju</th>
+                                        <th scope="col">Vi</th>
+                                        <th scope="col">Sa</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Software</th>
+                                        <td id="DoS"></td>
+                                        <td id="LuS"></td>
+                                        <td id="MaS"></td>
+                                        <td id="MiS"></td>
+                                        <td id="JuS"></td>
+                                        <td id="ViS"></td>
+                                        <td id="SaS"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Mecatronica</th>
+                                        <td id="DoM"></td>
+                                        <td id="LuM"></td>
+                                        <td id="MaM"></td>
+                                        <td id="MiM"></td>
+                                        <td id="JuM"></td>
+                                        <td id="ViM"></td>
+                                        <td id="SaM"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Redes</th>
+                                        <td id="DoR"></td>
+                                        <td id="LuR"></td>
+                                        <td id="MaR"></td>
+                                        <td id="MiR"></td>
+                                        <td id="JuR"></td>
+                                        <td id="ViR"></td>
+                                        <td id="SaR"></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+
+                            <button class="btn btn-success float-end" id="btn-confirm">
+                                Confirmar</button>
+                        </div>
+                    </div> 
+                
+                 -->
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/vendors/Bootstrap/bootstrap.min.js"></script>
+    <script src="assets/js/vendors/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendors/toastr/toastr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+    <script src="assets/js/Site/index.js"></script>
+
+</body>
+
+</html>
